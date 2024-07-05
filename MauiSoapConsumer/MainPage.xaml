@@ -6,16 +6,20 @@
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
             
-            <Entry x:Name="number1" Placeholder="Digite um número"/>
-            <Entry x:Name="number2" Placeholder="Digite um número"/>
+            <Entry x:Name="Number1" Placeholder="Digite um número"/>
+            <Entry x:Name="Number2" Placeholder="Digite um número"/>
 
             <HorizontalStackLayout  Spacing="10"/>
             
-            <Button Text="Somar"/>
-            <Button Text="Subtrair"/>
-            <Button Text="Dividir"/>
-            <Button Text="Multiplicar"/>
-                
+            <Button Text="Somar" Clicked="Somar"/>
+            <Button Text="Subtrair" Clicked="Subtrair"/>
+            <Button Text="Dividir" Clicked="Dividir"/>
+            <Button Text="Multiplicar" Clicked="Multiplicar"/>
+
+            <Label Text="Resultado"/>
+            <Label Text="0" x:Name="LblResult"/>
+            
+
             <HorizontalStackLayout/>
                 
         </VerticalStackLayout>
